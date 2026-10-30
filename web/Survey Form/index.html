@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">User Survey</h1>
+    <p id="description">A form to collect feedback from users.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label><input id="name" type="text" name="name" placeholder="Joe Doe" required/><br>
+      <label for="email" id="email-label">Email:</label><input id="email" name="email" type="email" placeholder="joedoe@fcc.com" required/><br>
+      <label for="number" id="number-label">Age(optrional):</label><input type="number" id="number" name="age" min="13" max="120" placeholder="54" />
+
+      <label for="dropdown">Did you like our products?</label>
+      <select id="dropdown" name="satisfaction">
+        <option value="5">Great</option>
+        <option value="1">Not Great</option>
+      </select>
+
+      <p>Would you recommend us to a friend?</p>
+      <input type="radio" id="rec-pos" name="rec" value="positive"/><label for="rec-pos">Definately</label>
+      <input type="radio" id="rec-neg" name="rec" value="negative" /><label for="rec-neg">No</label>
+      <input type="radio" id="rec-neu" name="rec" value="neutral" /><label for="rec-neu">Maybe</label>
+      <p>Which of our Products did you like?</p>
+      <input type="checkbox" id="smartphone" name="smartphone" value="iphone"/><label for="smartphone">Iphone</label>
+      <input type="checkbox" id="tv" name="smart-tv" value="roku"/><label for="tv">Roku</label>
+      <input type="checkbox" id="none" name="not-int" value="nothing" /><label for="none">Nothing</label>
+
+      <p>Do you have any more feedback for us?</p>
+      <textarea></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
